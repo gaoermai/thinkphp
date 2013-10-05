@@ -178,7 +178,9 @@ class App {
         session(C('SESSION_OPTIONS'));
         // 记录应用初始化时间
         G('initTime');
-        App::exec();
+        if (!class_exists('ThinkPHPUnit')) {
+            App::exec();
+        }
         // 项目结束标签
         tag('app_end');
         return ;
