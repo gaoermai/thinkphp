@@ -178,7 +178,7 @@ class App {
         session(C('SESSION_OPTIONS'));
         // 记录应用初始化时间
         G('initTime');
-        if (!class_exists('ThinkPHPUnit')) {
+        if (!class_exists('ThinkPHPUnit_Framework_TestCase')) {
             App::exec();
         }
         // 项目结束标签

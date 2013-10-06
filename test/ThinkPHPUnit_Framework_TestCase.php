@@ -134,7 +134,7 @@ class mockBrowser {
     }
 }
 
-class ThinkPHPUnit extends PHPUnit_Framework_TestCase {
+class ThinkPHPUnit_Framework_TestCase extends PHPUnit_Framework_TestCase {
     public static $mockView;
 
     public static function setUpBeforeClass() {
